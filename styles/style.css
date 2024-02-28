@@ -1,0 +1,29 @@
+body,
+html {
+  text-align: center;
+  margin: 0;
+}
+
+.large-text-area {
+  height: 200px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: beige;
+  margin: 40px;
+}
+
+footer li {
+  display: inline-block;
+  margin: 5px 20px;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+footer a:hover {
+  background-color: slategray;
+}

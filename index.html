@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+  </head>
+    <h1>Comparar librerías y appSettings</h1>
+    <form id="myForm">
+      <textarea type="textarea" id="inputData" class="large-text-area" required></textarea>
+      <input type="submit" value="Transformar">
+      <textarea type="textarea" id="output" class="large-text-area" readonly></textarea>
+    </form>
+    <p id="azureDevopsUrl">
+      https://dev.azure.com/{organization}/{team-project}/_apis/distributedtask/variablegroups/{groupId}?api-version={api-version}
+    </p>
+    <form id="organizationDetails">
+      <input type="text" placeholder="Nombre de su organización" id="organization"/>
+      <input type="text" placeholder="Nombre de su proyecto" id="team-project"/>
+      <input type="text" placeholder="Nombre de su grupo de variables" id="variable-group"/>
+      <input type="submit" value="Consultar">
+    </form>
+    <textarea type="textarea" id="azure-devops-data" class="large-text-area" readonly></textarea>
+    <footer>
+      <h4>Herramientas y enlaces de referencia</h4>
+      <ul>
+        <li>
+          <a href="https://www.convertsimple.com/convert-javascript-to-json/" target="_blank" rel="noopener noreferrer">Convert Javascript Object to JSON</a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer" 
+            href="https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows">
+            Use personal access tokens
+          </a>
+          </li>
+          <li>
+          <a target="_blank" rel="noopener noreferrer"
+          href="https://learn.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-7.2">
+            Azure DevOps Services REST API Reference
+          </a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener noreferrer"
+          href="https://learn.microsoft.com/en-us/rest/api/azure/devops/distributedtask/variablegroups/update?view=azure-devops-rest-7.2#variablegroupproviderdata">
+            Update Variable Group
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script type="module" src="./js/program.js"></script>
+  </body>
+</html>
